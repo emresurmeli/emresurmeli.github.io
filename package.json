@@ -1,0 +1,31 @@
+{
+  "name": "emresurmeli.github.io",
+  "version": "1.0.0",
+  "description": "Emre Surmeli's personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t reactify ./index.js | uglifyjs -cm > bundle.js ",
+    "develop": "watchify -d -t reactify ./index.js -o  bundle.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emresurmeli/emresurmeli.github.io.git"
+  },
+  "author": "Emre Surmeli <s.emre.s.8@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emresurmeli/emresurmeli.github.io/issues"
+  },
+  "homepage": "https://github.com/emresurmeli/emresurmeli.github.io",
+  "dependencies": {
+    "browserify": "^10.2.4",
+    "envify": "^3.4.0",
+    "react": "^0.13.3",
+    "react-async": "^2.1.0",
+    "react-router-component": "^0.25.4",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.4.23",
+    "watchify": "^3.2.3"
+  }
+}
