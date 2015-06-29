@@ -2,7 +2,7 @@
   "name": "emresurmeli.github.io",
   "version": "1.0.0",
   "description": "Emre Surmeli's personal website",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify -t reactify ./index.js | uglifyjs -cm > bundle.js ",
@@ -18,14 +18,15 @@
     "url": "https://github.com/emresurmeli/emresurmeli.github.io/issues"
   },
   "homepage": "https://github.com/emresurmeli/emresurmeli.github.io",
+  "devDependencies": {},
   "dependencies": {
-    "browserify": "^10.2.4",
-    "envify": "^3.4.0",
-    "react": "^0.13.3",
-    "react-async": "^2.1.0",
-    "react-router-component": "^0.25.4",
-    "reactify": "^1.1.1",
-    "uglify-js": "^2.4.23",
-    "watchify": "^3.2.3"
+    "browserify": "~6.0.2",
+    "envify": "~3.0.0",
+    "reactify": "~0.14.0",
+    "uglify-js": "~2.3.6",
+    "watchify": "~1.0.6",
+    "react": "~0.11.2",
+    "react-async": "~1.0.2",
+    "react-router-component": "~0.22.0"
   }
 }

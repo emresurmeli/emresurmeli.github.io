@@ -1,0 +1,126 @@
+html, body, .Main {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  width: 100%;
+
+  font-family: 'Myriad Pro', Helvetica, serif;
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 300%;
+  text-transform: uppercase;
+}
+
+a {
+  color: white;
+}
+
+code {
+  font-size: 90%;
+  padding: 0 0.2em;
+}
+pre, code {
+  font-family: Menlo, Monaco, monospace;
+}
+pre {
+  margin: 2em 2em;
+}
+
+.Page {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.Page__wrapper {
+  padding: 1em;
+}
+
+.MainPage {
+  background: #0ac2d2;
+}
+
+.AboutPage {
+  background: #60d7a9;
+}
+
+.moveUp-enter {
+  position: absolute;
+
+  transition-duration: .3s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease-out;
+  transform: translate3d(0,100%,0);
+  z-index: 10000;
+}
+
+.moveUp-enter.moveUp-enter-active {
+  transform: translate3d(0,0,0);
+}
+
+.moveUp-leave {
+  position: absolute;
+
+  transition-duration: .3s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease-out;
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}
+
+.moveUp-leave.moveUp-leave-active {
+  transform: translate3d(0,-15%,0);
+  opacity: 0.3;
+}
+
+.moveDown-enter {
+  position: absolute;
+
+  transition-duration: .3s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease-out;
+  transform: translate3d(0,-100%,0);
+  z-index: 10000;
+}
+
+.moveDown-enter.moveDown-enter-active {
+  transform: translate3d(0,0,0);
+}
+
+.moveDown-leave {
+  position: absolute;
+
+  transition-duration: .3s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease-out;
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}
+
+.moveDown-leave.moveDown-leave-active {
+  transform: translate3d(0,15%,0);
+  opacity: 0.3;
+}
+
+.fade-enter {
+  opacity: 0.01;
+  transition: opacity .1s ease-in;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-leave {
+  opacity: 1;
+  transition: opacity .1s ease-in;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+}
