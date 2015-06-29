@@ -50,7 +50,7 @@ var App = React.createClass({
     return (
       <AnimatedLocations hash className="Main" transitionName="moveUp" popStateTransitionName="fade">
         <Location path="/" handler={HomePage} />
-        <Location path="/about" handler={AboutPage} />
+        <Location path="/blog" handler={BlogPage} />
       </AnimatedLocations>
     )
   }
@@ -72,13 +72,13 @@ var HomePage = React.createClass({
   }
 })
 
-// About Page
-var AboutPage = React.createClass({
+// Blog Page
+var BlogPage = React.createClass({
   render: function() {
     return (
       <div className="AboutPage">
         <div className="Page__wrapper">
-          <h1>About Emre</h1>
+          <h1>Emres Blog</h1>
           <Link transitionName="moveDown" href="/">Home</Link>
         </div>
       </div>
