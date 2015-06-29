@@ -22,11 +22,11 @@ var AnimatedLocations = React.createClass({
 
     render: function() {
 
-      var handler = this.renderRouteHandler();
+      var handler    = this.renderRouteHandler();
       var isPopState = this.state.navigation.isPopState;
-      var enabled = isPopState ?
-                    !!this.props.popStateTransitionName :
-                    !this.state.navigation.noTransition;
+      var enabled    = isPopState ?
+                       !!this.props.popStateTransitionName :
+                       !this.state.navigation.noTransition;
       var props = {
         component: React.DOM.div,
         transitionEnter: enabled,
