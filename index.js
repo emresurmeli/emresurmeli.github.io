@@ -64,7 +64,7 @@ var HomePage = React.createClass({
         <div className="Page__wrapper">
           <h1>Emre Surmeli</h1>
           <p>
-            <Link href="/about">About</Link>
+            <Link href="/blog">Blog</Link>
           </p>
         </div>
       </div>
