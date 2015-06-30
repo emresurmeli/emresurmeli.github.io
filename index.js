@@ -50,7 +50,7 @@ var App = React.createClass({
     return (
       <AnimatedLocations hash className="Main" transitionName="moveUp" popStateTransitionName="fade">
         <Location path="/" handler={HomePage} />
-        <Location path="/blog" handler={BlogPage} />
+        <Location path="/about" handler={AboutPage} />
       </AnimatedLocations>
     )
   }
@@ -63,23 +63,35 @@ var HomePage = React.createClass({
       <div className="MainPage Page">
         <div className="Page__wrapper">
           <h1>Emre Surmeli</h1>
-          <p>
-            <Link href="/blog">Blog</Link>
-          </p>
+          <h2>Web Developer | Coffee Lover | TA @ <a href="https://www.codefellows.org/">Code Fellows</a></h2>
+          <div class="circular"></div>
+          <h3>
+            <Link href="/about">About</Link>
+          </h3>
         </div>
       </div>
     )
   }
 })
 
-// Blog Page
-var BlogPage = React.createClass({
+// About Page
+var AboutPage = React.createClass({
   render: function() {
     return (
       <div className="AboutPage">
         <div className="Page__wrapper">
-          <h1>Emres Blog</h1>
+          <h1>About Emre</h1>
           <Link transitionName="moveDown" href="/">Home</Link>
+          <p>Hi I am Emre! I love web develeopment reading docs and programming books.
+             on my spare time I enjoy riding my bike, taking picture and spending quality
+             time with the close ones.
+
+             I have had many hobbies in the past, from film making to downhill skateboarding.
+             But I have discovered web development and I believe that this hobby might keep
+             me busy for the rest of my life. There is never a lack of something new to learn.
+
+             I share new and exciting things I learn on my <a href="https://medium.com/@emresurmeli"> Blog</a>.
+          </p>
         </div>
       </div>
     )
