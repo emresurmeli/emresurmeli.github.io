@@ -83,7 +83,7 @@ var AboutPage = React.createClass({
           <h1>About Emre</h1>
           <Link transitionName="moveDown" href="/">Home</Link>
           <p>Hi I am Emre! I love web develeopment reading docs and programming books.
-             on my spare time I enjoy riding my bike, taking picture and spending quality
+             on my spare time I enjoy riding my bike, taking pictures and spending quality
              time with the close ones.
 
              I have had many hobbies in the past, from film making to downhill skateboarding.
