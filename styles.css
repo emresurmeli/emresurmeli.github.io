@@ -30,11 +30,20 @@ pre {
   margin: 2em 2em;
 }
 
+.text {
+  text-align: center;
+}
+
 .circular {
   width: 300px;
   height: 300px;
   border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
   background: url("https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11012416_10152698750520918_3195217338336692477_o.jpg") no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 .Page {

@@ -62,12 +62,8 @@ var HomePage = React.createClass({
     return (
       <div className="MainPage Page">
         <div className="Page__wrapper">
-          <h1>Emre Surmeli</h1>
-          <h2>Web Developer | Coffee Lover | TA @ <a href="https://www.codefellows.org/">Code Fellows</a></h2>
-          <div class="circular"></div>
-          <h3>
-            <Link href="/about">About</Link>
-          </h3>
+          <h1 className="text">Emre Surmeli</h1>
+          <h2 className="text">Web Developer | Coffee Lover | TA @ <a href="https://www.codefellows.org/">Code Fellows</a> | <Link href="/about">About</Link></h2>
         </div>
       </div>
     )
@@ -80,7 +76,7 @@ var AboutPage = React.createClass({
     return (
       <div className="AboutPage">
         <div className="Page__wrapper">
-          <h1>About Emre</h1>
+          <h1 className="text">About Emre</h1>
           <Link transitionName="moveDown" href="/">Home</Link>
           <p>Hi I am Emre! I love web develeopment reading docs and programming books.
              on my spare time I enjoy riding my bike, taking pictures and spending quality
