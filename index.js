@@ -65,6 +65,23 @@ var HomePage = React.createClass({
           <h1 className="text">Emre Surmeli</h1>
           <h2 className="text">Web Developer | Coffee Lover | TA @ <a href="https://www.codefellows.org/">Code Fellows</a> | <Link href="/about">About</Link></h2>
         </div>
+        <ul className="social-media">
+          <li>
+            <a href="https://github.com/emresurmeli" target="_blank">
+              <img src="images/github_rounded.png" alt="GitHub"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/semres8" target="_blank">
+              <img src="images/logo-twitter.png" alt="Twitter"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/emresurmeli" target="_blank">
+              <img src="images/LinkedIn.png" alt="LinkedIn" />
+            </a>
+          </li>
+        </ul>
       </div>
     )
   }
