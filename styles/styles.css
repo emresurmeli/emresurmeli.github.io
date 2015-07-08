@@ -19,17 +19,6 @@ a {
   color: white;
 }
 
-code {
-  font-size: 90%;
-  padding: 0 0.2em;
-}
-pre, code {
-  font-family: Menlo, Monaco, monospace;
-}
-pre {
-  margin: 2em 2em;
-}
-
 .text {
   text-align: center;
 }
@@ -139,4 +128,25 @@ pre {
 
 .fade-leave.fade-leave-active {
   opacity: 0.01;
+}
+
+/* Social Media */
+.social-media img {
+  width: 50px;
+}
+
+.social-media {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1em 0 3em 0;
+  text-align: center;
+}
+
+.social-media li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+  padding: 0;
+  height: 50px;
+  border-radius: 25px;
 }

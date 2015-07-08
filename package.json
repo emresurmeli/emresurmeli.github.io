@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -t reactify ./index.js | uglifyjs -cm > bundle.js ",
-    "develop": "watchify -d -t reactify ./index.js -o  bundle.js "
+    "build": "browserify -t reactify ./js/index.js | uglifyjs -cm > ./js/bundle.js",
+    "develop": "watchify -d -t reactify ./js/index.js -o  bundle.js"
   },
   "repository": {
     "type": "git",

@@ -11,7 +11,7 @@ var CSSTransitionGroup = React.addons.CSSTransitionGroup;
 var Location           = Router.Location;
 var Link               = Router.Link;
 
-// Animated location routes
+// Animation logic
 var AnimatedLocations = React.createClass({
 
     mixins: [Router.RouterMixin, Router.AsyncRouteRenderingMixin],
